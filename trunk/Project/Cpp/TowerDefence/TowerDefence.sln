@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TowerDefence", "TowerDefence\TowerDefence.vcproj", "{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60} = {96057C51-8E41-491A-8BB7-2BC129C3EA60}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CGL", "..\..\Library\CGL\Build\VC8\CGL.vcproj", "{96057C51-8E41-491A-8BB7-2BC129C3EA60}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCGL", "TestCGL\TestCGL.vcproj", "{609306AB-5247-47AE-A12B-FCC0B371B803}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60} = {96057C51-8E41-491A-8BB7-2BC129C3EA60}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F68ABEC3-AC92-4253-9043-15B604A4DB11}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		TowerDefence.vsmdi = TowerDefence.vsmdi
+		TowerDefence1.vsmdi = TowerDefence1.vsmdi
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Console", "..\..\Library\CGL\Console\Console.vcproj", "{E0260D97-DAE0-4E74-BC41-EE85C922C40C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60} = {96057C51-8E41-491A-8BB7-2BC129C3EA60}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TowerDefence1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Fast|Win32 = Fast|Win32
+		Fast2|Win32 = Fast2|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Debug|Win32.Build.0 = Debug|Win32
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Fast|Win32.ActiveCfg = Fast|Win32
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Fast|Win32.Build.0 = Fast|Win32
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Fast2|Win32.ActiveCfg = Fast2|Win32
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Fast2|Win32.Build.0 = Fast2|Win32
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Release|Win32.ActiveCfg = Release|Win32
+		{8A6990A6-8F2B-44C3-9B4A-D10F20A0972F}.Release|Win32.Build.0 = Release|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Debug|Win32.ActiveCfg = Debug|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Debug|Win32.Build.0 = Debug|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Fast|Win32.ActiveCfg = Fast|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Fast|Win32.Build.0 = Fast|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Fast2|Win32.ActiveCfg = Fast2|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Fast2|Win32.Build.0 = Fast2|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Release|Win32.ActiveCfg = Release|Win32
+		{96057C51-8E41-491A-8BB7-2BC129C3EA60}.Release|Win32.Build.0 = Release|Win32
+		{609306AB-5247-47AE-A12B-FCC0B371B803}.Debug|Win32.ActiveCfg = Debug|Win32
+		{609306AB-5247-47AE-A12B-FCC0B371B803}.Fast|Win32.ActiveCfg = Fast|Win32
+		{609306AB-5247-47AE-A12B-FCC0B371B803}.Fast|Win32.Build.0 = Fast|Win32
+		{609306AB-5247-47AE-A12B-FCC0B371B803}.Fast2|Win32.ActiveCfg = Fast2|Win32
+		{609306AB-5247-47AE-A12B-FCC0B371B803}.Fast2|Win32.Build.0 = Fast2|Win32
+		{609306AB-5247-47AE-A12B-FCC0B371B803}.Release|Win32.ActiveCfg = Release|Win32
+		{609306AB-5247-47AE-A12B-FCC0B371B803}.Release|Win32.Build.0 = Release|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Debug|Win32.Build.0 = Debug|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Fast|Win32.ActiveCfg = Release|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Fast|Win32.Build.0 = Release|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Fast2|Win32.ActiveCfg = Release|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Fast2|Win32.Build.0 = Release|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Release|Win32.ActiveCfg = Release|Win32
+		{E0260D97-DAE0-4E74-BC41-EE85C922C40C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

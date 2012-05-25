@@ -1,0 +1,4 @@
+Digital Signal Processing Library
+
+Let's not get carried away; this just does a Fft and has support for getting the spectrum of a music stream.
+
