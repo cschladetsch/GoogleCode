@@ -1,0 +1,8 @@
+This contains my various boost contributions.
+
+Monotonic is the fastest allocator ever made.
+
+Cloneable allows general structures to be treated as value types.
+
+ObjectModel provides runtime reflection, and networked events, properties and method calls.
+

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="BoxPlorer.cpp" />
+    <ClCompile Include="CatmullRom.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="DefaultShaders.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="GlShaderFunctions.cpp" />
+    <ClCompile Include="KeyFrame.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Precompiled.cpp" />
+    <ClCompile Include="Sdl.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="WoxPlorer.cpp" />
+    <ClCompile Include="FrameRate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CatmullRom.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultShaders.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyFrame.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Precompiled.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="TGA.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="WoxPlorer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3d.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\wglext.h">
+      <Filter>Include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glxext.h">
+      <Filter>Include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glext.h">
+      <Filter>Include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GlShaderFunctions.h">
+      <Filter>Include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameRate.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{29bdcc0e-e807-47cd-b9c6-6c27cc95c9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\GL">
+      <UniqueIdentifier>{08dd54fc-d745-4ccf-989d-612e664023e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
