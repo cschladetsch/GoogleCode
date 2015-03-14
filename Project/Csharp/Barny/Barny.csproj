@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FB19836-9C5D-47B5-890D-F7F347B1B64C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Barny</RootNamespace>
+    <AssemblyName>Barny</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClip.Designer.cs">
+      <DependentUpon>AddClip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarnyBot.cs" />
+    <Compile Include="ClipboardView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClipboardView.Designer.cs">
+      <DependentUpon>ClipboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clips.Designer.cs">
+      <DependentUpon>Clips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandBot.cs" />
+    <Compile Include="Connecting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connecting.Designer.cs">
+      <DependentUpon>Connecting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factory.cs" />
+    <Compile Include="Interfaces\IMessageSink.cs" />
+    <Compile Include="IrcSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IrcSettings.Designer.cs">
+      <DependentUpon>IrcSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Irc\Command.cs" />
+    <Compile Include="Irc\IIrcClient.cs" />
+    <Compile Include="Model\Channel.cs" />
+    <Compile Include="Model\Clip.cs" />
+    <Compile Include="Model\Database.cs" />
+    <Compile Include="BarnyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarnyWindow.Designer.cs">
+      <DependentUpon>BarnyWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Irc\IrcClient.cs" />
+    <Compile Include="Model\Interfaces\Interfaces.cs" />
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\Server.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="OutputWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OutputWindow.Designer.cs">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddClip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClipboardView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClipboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clips.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Clips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarnyWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BarnyWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connecting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Connecting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IrcSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IrcSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Readme.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Readme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowClip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShowClip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserlistWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserlistWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Readme.html" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Readme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Readme.Designer.cs">
+      <DependentUpon>Readme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repository.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="ShowClip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowClip.Designer.cs">
+      <DependentUpon>ShowClip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StringNumberCodec.cs" />
+    <Compile Include="UserlistWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserlistWindow.Designer.cs">
+      <DependentUpon>UserlistWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

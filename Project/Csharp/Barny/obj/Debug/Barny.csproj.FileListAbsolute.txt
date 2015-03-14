@@ -1,0 +1,2 @@
+C:\Dev\MyGoogleCode\Project\Csharp\Barny\bin\Debug\Barny.exe.config
+C:\Dev\MyGoogleCode\Project\Csharp\Barny\obj\Debug\Barny.csprojResolveAssemblyReference.cache
