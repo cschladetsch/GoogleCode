@@ -1,4 +1,4 @@
--- Instructions
+# Instructions
 
 Click the green circle to place the start position.
 
